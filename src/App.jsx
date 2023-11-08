@@ -2,9 +2,11 @@ import React from 'react';
 import './index.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 const App = () => {
   return (
     <div>
+    <Navbar/>
     <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
